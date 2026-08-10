@@ -1,0 +1,136 @@
+:root {
+    --verde-oscuro: #1b3c10;
+    --verde-claro: #e8f3ec;
+    --beige: #faf7f2;
+    --texto: #2b2b2b;
+    --borde: #c9dccf;
+    --acento: #d97b56;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--beige);
+    color: var(--texto);
+}
+
+header {
+    background-color: var(--verde-oscuro);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formulario {
+    background-color: var(--verde-claro);
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    padding: 20px 25px;
+}
+
+.formulario h2,
+.listado h2 {
+    color: var(--verde-oscuro);
+    margin-top: 0;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.formulario input {
+    padding: 8px 10px;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.formulario button {
+    margin-top: 10px;
+    align-self: flex-start;
+    background-color: var(--verde-oscuro);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.formulario button:hover {
+    background-color: #234f3b;
+}
+
+.listado {
+    background-color: white;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    padding: 20px 25px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: var(--verde-oscuro);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid var(--borde);
+    font-size: 0.9rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--verde-claro);
+}
+
+tbody tr:hover {
+    background-color: #dcece2;
+}
+
+.listado button {
+    background-color: var(--acento);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.listado button:hover {
+    background-color: #c05f39;
+}
